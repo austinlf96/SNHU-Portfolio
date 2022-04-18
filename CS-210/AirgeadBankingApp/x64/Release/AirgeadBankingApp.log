@@ -1,0 +1,10 @@
+﻿  investmentcalculator.cpp
+C:\Users\Thief\source\repos\AirgeadBankingApp\investmentcalculator.cpp(48,29): warning C4129: '.': unrecognized character escape sequence
+  main.cpp
+C:\Users\Thief\source\repos\AirgeadBankingApp\main.cpp(22,32): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+C:\Users\Thief\source\repos\AirgeadBankingApp\investmentcalculator.cpp(74): warning C4715: 'InvestmentCalculator::ValidateInput': not all control paths return a value
+  All 813 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  AirgeadBankingApp.vcxproj -> C:\Users\Thief\source\repos\AirgeadBankingApp\x64\Release\AirgeadBankingApp.exe
