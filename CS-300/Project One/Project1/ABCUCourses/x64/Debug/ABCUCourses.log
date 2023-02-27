@@ -1,0 +1,9 @@
+﻿  ABCUCourses.cpp
+C:\Users\austi\OneDrive\School\CS\CS-300\ABCUCourses\ABCUCourses\ABCUCourses.cpp(363,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\austi\OneDrive\School\CS\CS-300\ABCUCourses\ABCUCourses\ABCUCourses.cpp(369,39): warning C4018: '<': signed/unsigned mismatch
+  CSVparser.cpp
+C:\Users\austi\OneDrive\School\CS\CS-300\ABCUCourses\ABCUCourses\CSVparser.cpp(119,29): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\austi\OneDrive\School\CS\CS-300\ABCUCourses\ABCUCourses\CSVparser.cpp(124,28): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\austi\OneDrive\School\CS\CS-300\ABCUCourses\ABCUCourses\CSVparser.cpp(206,26): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  ABCUCourses.vcxproj -> C:\Users\austi\OneDrive\School\CS\CS-300\ABCUCourses\x64\Debug\ABCUCourses.exe
