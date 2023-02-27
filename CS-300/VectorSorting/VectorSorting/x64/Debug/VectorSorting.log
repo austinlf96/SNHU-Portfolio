@@ -1,0 +1,6 @@
+﻿  VectorSorting.cpp
+C:\Users\austi\OneDrive\School\CS\CS-300\VectorSorting\VectorSorting\VectorSorting.cpp(94,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\austi\OneDrive\School\CS\CS-300\VectorSorting\VectorSorting\VectorSorting.cpp(200,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\austi\OneDrive\School\CS\CS-300\VectorSorting\VectorSorting\VectorSorting.cpp(319,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\austi\OneDrive\School\CS\CS-300\VectorSorting\VectorSorting\VectorSorting.cpp(326,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  VectorSorting.vcxproj -> C:\Users\austi\OneDrive\School\CS\CS-300\VectorSorting\x64\Debug\VectorSorting.exe
