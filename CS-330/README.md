@@ -1,6 +1,7 @@
 # CS-330 Final Reflection
 ## How do I approach designing software?
-        - What new design skills has your work on the project helped you to craft?
+        ### What new design skills has your work on the project helped you to craft?
+        This project has helped me learn how abstraction can benefit the implementation of legacy libraries. It also taught me how to break down complex objects into individual parts.
         - What design process did you follow for your project work?
         - How could tactics from your design approach be applied in future work?
 ## How do I approach developing programs?
