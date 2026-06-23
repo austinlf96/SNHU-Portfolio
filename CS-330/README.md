@@ -29,3 +29,5 @@
 
 2. How do computational graphics and visualizations give you new knowledge and skills that can be applied in your future professional pathway?
    - I do not yet know how graphics and visualizations will serve me in my professional career. However, I worked as a CAD architect for a year, and I have been 3D printing for years. This course has helped me understand how CAD and 3D printing software operate and comprehend various features they offer. For example, I didn't really understand what purpose orthogonal views provided in CAD software. After this course, I have a better understanding of their application and the purpose they serve. 
+
+OpenGL education enabled by https://learnopengl.com/
