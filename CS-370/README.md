@@ -2,10 +2,19 @@
 
 ## Briefly explain the work that you did on this project: What code were you given? What code did you create yourself?
 
+Project Two, located in the folder aptly named "Project 2," contains several Python files. TreasureMaze.py, GameExperience.py, and Frey_Austin_ProjectTwo.ipynb were all provided by the instructor. All of my work was done in Frey_Austin_ProjectTwo.ipynb. I wrote the code to train the AI Agent (the pirate), which can be identified after the portion of the notebook that says "#TODO: Complete the Q-Training Algorithm Code Block" in the "#START_HERE" section of the qtrain(model, maze, **opt) function. In this project, I was responsible for training the AI Agent (the "pirate") to successfully find the treasure 100% of the time. I developed the code by following the pseudocode found earlier in the notebook. 
+
 ## Connect your learning from throughout this course to the larger field of computer science:
   - ### What do computer scientists do and why does it matter?
+    Computer scientists, at their core, solve problems. We use technology in many forms: software, web applications, conventional coding, AI platforms, and more to create solutions to modern problems. It matters because even when AI has surpassed the output and productivity of the average Computer Scientist, a programmer's mindset remains an invaluable tool applicable across many disciplines. This ensures that even as the world evolves at a pace like never before, solving problems will never go away. Whether it is through using AI to identify protein folds or creating a convenient and innovative to-do list, computer science work will matter for a long time because, through its practice, we can solve real-world problems.
     
   - ### How do I approach a problem as a computer scientist?
-    
+    I approach problems as a computer scientist in a few specific steps:
+    1. Identify the actual problem, meaning identifying what the underlying problem is rather than what I am being told is the problem. Many non-technical individuals don't actually understand the problem they are trying to solve, so it is our job to critically analyze the issues they are presenting to determine the underlying cause and solve **that** problem.
+    2. Break the problem down into small, manageable sections. One of the principles of programming is creating modular code, which requires understanding a problem at a fine level and breaking it into as many pieces as possible.
+    3. Test solutions for the problem. It's not easy to get it right the first time, and even if one does successfully solve the problem on the first try; there's always room for improvement and innovation.
+    4. Debug implemented solutions. This is probably the most valuable skill a computer scientist has in their arsenal. Learning to debug, to follow logic to identify the flaws, and implementing new solutions (or sometimes hacks) is a skillset that very few disciplines innately teach.
+    5. Deploy the solution, gather feedback, and begin the process again until the desired requirements have been met.
+   
   - ### What are my ethical responsibilities to the end user and the organization?
-  
+  My ethical responsibilities to end users and organizations alike are to create code that is safe, responsible, and non-predatory. This has many meanings, but ultimately it comes down to not abusing the trust that end users place in the software and web applications we develop. This can take the form of not collecting unauthorized data, not collecting data under false pretenses, striving to eliminate bias within programs, and more. By satisfying these requirements, one is doing their due diligence to an end user and an organization alike. Most of the practices applied to end users also apply to organizations, with a few additional ethical responsibilities, such as not brute-forcing access to sensitive data within the organization, not creating malicious code that is detrimental to the organization or the individuals who make up the organization, and other principles of responsible programming. 
