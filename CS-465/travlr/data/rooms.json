@@ -1,0 +1,20 @@
+[
+    {
+        "name": "First Class Room",
+        "image": "first-class.jpg",
+        "description": "A luxurious retreat with plush bedding, refined finishes, a spa-inspired bathroom, and sweeping island views that create a polished, restorative stay.",
+        "rate": "$220 / Day"
+    },
+    {
+        "name": "Deluxe Room",
+        "image": "deluxe.jpg",
+        "description": "A comfortable and elegant room featuring a cozy king bed, bright natural light, a private balcony, and tasteful coastal details for a relaxing getaway.",
+        "rate": "$150 / Day"
+    },
+    {
+        "name": "Suite Room",
+        "image": "suite.jpg",
+        "description": "A spacious suite with separate lounging space, premium furnishings, a soaking tub, and expansive views that make it ideal for longer, more indulgent stays.",
+        "rate": "$180 / Day"
+    }
+]

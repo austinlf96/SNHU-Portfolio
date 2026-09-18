@@ -1,0 +1,17 @@
+[
+    {
+        "name": "SeaFood Special",
+        "image": "seafoods.jpg",
+        "description": "<span>Fried Salmon Special</span> A savory island favorite featuring tender grilled salmon, bright citrus flavors, roasted vegetables, and a buttery herb finish that brings out the richness of the seafood."
+    },
+    {
+        "name": "Sumptuous Desserts",
+        "image": "desserts.jpg",
+        "description": "<span>Choco Ice Cream Sandwich</span> A decadent dessert layered with rich chocolate cookies and creamy vanilla bean ice cream, finished with a silky caramel drizzle for a sweet, satisfying end to the meal."
+    },
+    {
+        "name": "Buffet",
+        "image": "buffet.jpg",
+        "description": "<span>Mixed Buffet</span> An abundant spread of fresh salads, grilled favorites, roasted seasonal vegetables, and artisan breads served in a lively island dining setting for guests who want variety."
+    }
+]
