@@ -35,28 +35,32 @@ if (process.platform === 'win32') {
 }
 
 // Configure for Graceful Shutdown
-const gracefulShutdown = (msg) => {
-	mongoose.connection.close(() => {
+// close() returns a promise in Mongoose 7+, so await it instead of passing a callback
+const gracefulShutdown = async (msg) => {
+	try {
+		await mongoose.connection.close();
 		console.log(`Mongoose disconnected through ${msg}`);
-	});
+	} catch (err) {
+		console.error(`Error closing Mongoose connection during ${msg}:`, err);
+	}
 };
 
 // Event Listeners to process graceful shutdowns
 // Shutdown invoked by nodemon signal
-process.once('SIGUSR2', () => {
-	gracefulShutdown('nodemon restart');
+process.once('SIGUSR2', async () => {
+	await gracefulShutdown('nodemon restart');
 	process.kill(process.pid, 'SIGUSR2');
 });
 
 // Shutdown invoked by app termination
-process.on('SIGINT', () => {
-	gracefulShutdown('app termination');
+process.on('SIGINT', async () => {
+	await gracefulShutdown('app termination');
 	process.exit(0);
 });
 
 // Shutdown invoked by container termination
-process.on('SIGTERM', () => {
-	gracefulShutdown('app shutdown');
+process.on('SIGTERM', async () => {
+	await gracefulShutdown('app shutdown');
 	process.exit(0);
 });
 

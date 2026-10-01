@@ -13,7 +13,7 @@ const travel = async(req, res, next) => {
         .then(response => response.json())
         .then(json => {
             let message = null;
-            if (!json instanceof Array) {
+            if (!(json instanceof Array)) {
                 message = "API lookup error";
                 json = [];
             } else {
