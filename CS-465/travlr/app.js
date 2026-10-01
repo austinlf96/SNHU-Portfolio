@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var handlebars = require('hbs');
 
+// Define routers
 var indexRouter = require('./app_server/routes/index');
 var usersRouter = require('./app_server/routes/users');
 var travelRouter = require('./app_server/routes/travel');
@@ -13,6 +14,10 @@ var mealsRouter = require('./app_server/routes/meals');
 var newsRouter = require('./app_server/routes/news');
 var aboutRouter = require('./app_server/routes/about');
 var contactRouter = require('./app_server/routes/contact');
+var apiRouter = require('./app_api/routes/index');
+
+// Connect to MongoDB
+require('./app_api/models/db');
 
 var app = express();
 
@@ -20,6 +25,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'app_server', 'views'));
 app.set('view engine', 'hbs');
 app.set('view options', { layout: 'layouts/layout' });
+
 // register handlebars partials (https://www.npmjs.com/package/hbs)
 handlebars.registerPartials(__dirname + '/app_server/views/partials');
 handlebars.registerHelper('eq', (a, b) => a === b);
@@ -31,6 +37,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Enable CORS for API routes
+app.use('/api', function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', 'http://localhost:4200'); // Allow requests from Angular app
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  if (req.method === 'OPTIONS') return res.sendStatus(204);
+  next();
+});
+
+// Use routers
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/travel', travelRouter);
@@ -39,6 +56,7 @@ app.use('/meals', mealsRouter);
 app.use('/news', newsRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
+app.use('/api', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
