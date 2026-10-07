@@ -1,10 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { TripListing } from './trip-listing/trip-listing';
+import { CommonModule } from '@angular/common';
+import { Navbar } from './navbar/navbar';
 
 @Component({
-  imports: [RouterOutlet, TripListing],
+  imports: [RouterOutlet, RouterOutlet, Navbar],
   selector: 'app-root',
+  standalone: true,
   styleUrl: './app.css',
   templateUrl: './app.html',
 })

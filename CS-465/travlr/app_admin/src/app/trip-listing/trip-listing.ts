@@ -1,12 +1,12 @@
 //import { CurrencyPipe } from '@angular/common';
 // import { JsonPipe } from '@angular/common';
 import { Component, OnInit, signal } from '@angular/core';
-import { trips } from '../data/trips';
 import { CommonModule } from '@angular/common';
 import { TripCard } from '../trip-card/trip-card';
 import { Trip } from '../models/trip';
 import { TripData } from '../services/trip-data';
 import { Router } from '@angular/router';
+import { Authentication } from '../services/authentication';
 
 @Component({
   imports: [CommonModule, TripCard],
@@ -21,9 +21,13 @@ export class TripListing implements OnInit{
   trips = signal<Trip[]>([]);
   message: string = '';
 
-  constructor(private tripData: TripData, private router: Router) {
+  constructor(private tripData: TripData, private router: Router, private authentication: Authentication) {
     console.log('TripListing component initialized');
   }
+
+public isLoggedIn(): boolean {
+  return this.authentication.isLoggedIn();
+}
 
 public addTrip(): void {
   this.router.navigate(['add-trip']);
