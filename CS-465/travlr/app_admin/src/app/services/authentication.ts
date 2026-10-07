@@ -71,16 +71,13 @@ export class Authentication {
         );
     }
 
-    public register(user: User, password: string): void {
-        this.tripData.register(user, password).subscribe({
-            next: (res: any) => {
-                console.log(res);
+    // Create an account; the API returns a JWT, so the new user is logged in right away
+    public register(user: User, password: string): Observable<AuthResponse> {
+        return this.tripData.register(user, password).pipe(
+            tap(res => {
                 this.authResp = res;
-                this.saveToken(this.authResp.token);
-            },
-            error: (err) => {
-                console.error('Registration failed', err);
-            }
-        });
+                this.saveToken(res.token);
+            })
+        );
     }
 }
