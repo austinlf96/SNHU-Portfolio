@@ -72,13 +72,15 @@ const tripsUpdateTrip = async (req, res) => {
                 perPerson: req.body.perPerson,
                 image: req.body.image,
                 description: req.body.description
-            }
+            },
+            // return the updated document (default is the pre-update one) and enforce schema validators
+            { new: true, runValidators: true }
         ).exec();
 
         if (!updatedTrip) {
             res.status(404).json({ message: 'Trip not found' });
         } else {
-            res.status(201).json(updatedTrip);
+            res.status(200).json(updatedTrip);
         }
     } catch (error) {
         res.status(400).json({ message: error.message });

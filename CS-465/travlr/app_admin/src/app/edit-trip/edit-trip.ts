@@ -22,6 +22,7 @@ export class EditTrip implements OnInit{
   constructor(private formBuilder: FormBuilder, private router: Router, private tripData: TripData) {}
 
   ngOnInit(): void {
+    // tripCode is set by TripCard.editTrip(); without it there is nothing to edit
     const tripCode = localStorage.getItem('tripCode');
     if (!tripCode) {
       this.message = 'No trip code found in local storage.';
